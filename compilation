@@ -1,0 +1,4 @@
+compile:
+g++ main.cpp backend/*.cpp core/*.cpp -o utopia -DBACKEND_X11 $(pkg-config --cflags --libs libpng x11 xext pixman-1)
+run:
+./utopia Sprite Sprite1 sprite.png 1 1 1 Pressed setPosition MousePositionX MousePositionY
